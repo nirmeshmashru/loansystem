@@ -1,0 +1,48 @@
+@media (min-width: 300px) {
+	
+	}
+	
+}
+
+
+@media (min-width: 768px) {
+	.logo-footer{
+		text-align:left;
+	}
+	
+}
+
+
+@media (min-width: 980px) {
+	
+}
+
+
+@media (min-width: 1000px) {
+	
+}
+@media (max-width: 767px) {
+	.form-position{
+		position:relative;
+		top:0;
+		right:0;
+		box-shadow:none;
+		border-radius:0;
+		width:100%;
+		padding:10px 15px;
+	}
+	.planing-block img{
+		width:100%;
+	}
+	.consul-con{
+		text-align:center;
+	}
+	.consultation{
+		margin:0 auto 30px;
+		display:table;
+		float:none;
+	}
+	.navbar-toggle .icon-bar{
+		background:#fff;
+	}
+}
