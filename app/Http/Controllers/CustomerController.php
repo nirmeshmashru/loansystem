@@ -53,7 +53,8 @@ class CustomerController extends Controller
      */
     public function show($id)
     {
-        //
+        $customer = $this->customer->find($id);
+        return view('customer.show',['customer' => $customer]);
     }
 
     /**
@@ -64,7 +65,8 @@ class CustomerController extends Controller
      */
     public function edit($id)
     {
-        //
+        $customer = $this->customer->find($id);
+        return view('customer.edit',['customer' => $customer]);
     }
 
     /**
@@ -76,7 +78,9 @@ class CustomerController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $customer = $this->customer->find($id);
+        $customer->fill($request->all())->save();
+        return redirect()->route('customer.index');
     }
 
     /**

@@ -1,7 +1,8 @@
+
 @extends('layouts.admin')
 
 @section('css')
-    <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="{{asset('plugins/datatables/dataTables.bootstrap.css')}}">
 @endsection
 
 @section('content')
@@ -42,7 +43,10 @@
                                         <td>{{$l->period}}</td>
                                         <td>{{$l->amount}}</td>
                                         <td><span class="label @if($l->status == 'pending') label-danger @else label-success @endif">{{$l->status}}</span></td>
-                                        <td><a href="{{Route('loan.show',$l->id)}}" class="btn btn-default"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+                                        <td>
+                                            <a href="{{Route('loan.edit',$l->id)}}" class="btn btn-success"><i class="fa fa-edit" aria-hidden="true"></i></a>
+                                            <a href="{{Route('loan.show',$l->id)}}" class="btn btn-default"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                        </td>
                                     </tr>
                                 @endforeach
                                 </tbody>
@@ -73,8 +77,8 @@
 @endsection
 
 @section('js')
-    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="{{asset('plugins/datatables/jquery.dataTables.min.js')}}"></script>
+    <script src="{{asset('plugins/datatables/dataTables.bootstrap.min.js')}}"></script>
     <script>
         $(function () {
             $('#example1').DataTable({

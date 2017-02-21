@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Loan;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
 
 class LoanController extends Controller
 {
@@ -65,7 +66,8 @@ class LoanController extends Controller
      */
     public function edit($id)
     {
-        //
+        $loan = $this->loan->find($id);
+        return view('loan.edit',['loan' => $loan->load('customer')]);
     }
 
     /**
@@ -77,7 +79,9 @@ class LoanController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $loan = $this->loan->find($id);
+        $loan->fill($request->all())->save();
+        return redirect()->route('loan.index');
     }
 
     /**

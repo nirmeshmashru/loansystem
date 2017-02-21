@@ -1,7 +1,6 @@
 @extends('layouts.admin')
 
 @section('css')
-    <link rel="stylesheet" href="{{asset("plugins/datatables/dataTables.bootstrap.css")}}">
 @endsection
 
 @section('content')
@@ -129,6 +128,10 @@
                                     <th>IP Address</th>
                                     <td>{{$loan->ip_address}}</td>
                                 </tr>
+                                <tr>
+                                    <th>Created At</th>
+                                    <td>{{$loan->created_at}}</td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -145,6 +148,10 @@
                         <div class="box-body no-padding">
                             <table class="table table-condensed">
                                 <tbody>
+                                <tr>
+                                    <th>Customer ID</th>
+                                    <td>{{$loan->customer->id}}</td>
+                                </tr>
                                 <tr>
                                     <th>First Name</th>
                                     <td>{{$loan->customer->first_name}}</td>
@@ -165,6 +172,10 @@
                                     <th>Gender</th>
                                     <td>{{$loan->customer->gender}}</td>
                                 </tr>
+                                <tr>
+                                    <th>Created At</th>
+                                    <td>{{$loan->customer->created_at}}</td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -178,18 +189,4 @@
 @endsection
 
 @section('js')
-    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
-    <script>
-        $(function () {
-            $('#example1').DataTable({
-                "paging": true,
-                "lengthChange": false,
-                "searching": true,
-                "ordering": false,
-                "info": true,
-                "autoWidth": false
-            });
-        });
-    </script>
 @endsection

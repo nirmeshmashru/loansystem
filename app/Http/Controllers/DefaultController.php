@@ -47,14 +47,14 @@ class DefaultController extends Controller
         if($customer != ''){
             $this->loan->customer_id = $customer->id;
             $this->loan->ip_address = $this->get_client_ip();
-            $this->loan->status = 'pending';
+            $this->loan->status = 'Pending';
             $this->loan->fill($request->all());
             $this->loan->save();
         }else{
             $this->customer->fill($request->all())->save();
             $this->loan->customer_id = $this->customer->id;
             $this->loan->ip_address = $this->get_client_ip();
-            $this->loan->status = 'pending';
+            $this->loan->status = 'Pending';
             $this->loan->fill($request->all());
             $this->loan->save();
         }

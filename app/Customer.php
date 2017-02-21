@@ -11,7 +11,7 @@ class Customer extends Model
 
     protected $table = 'customers';
 
-    protected $hidden = ['created_at','updated_at','deleted_at'];
+    protected $hidden = ['updated_at','deleted_at'];
 
     protected $fillable = ['ssn','first_name','last_name','phone','email','gender'];
 }
