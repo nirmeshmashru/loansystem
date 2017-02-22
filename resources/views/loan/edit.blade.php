@@ -128,7 +128,10 @@
                                 <tr>
                                     <th>Accomodation Type</th>
                                     <td>
-                                        c
+                                        <select name="accomodation_type" class="form-control">
+                                            <option value=""Yes @if($loan->accomodation_type == "Yes")selected="selected"@endif>Yes</option>
+                                            <option value="No" @if($loan->accomodation_type == "No")selected="selected"@endif>No</option>
+                                        </select>
                                     </td>
                                 </tr>
                                 <tr>
@@ -178,7 +181,7 @@
                                     <th>Credit Cards</th>
                                     <td>
                                         <select name="credit_cards" class="form-control">
-                                            <option value="Yes" @if($loan->credit_cards == "Yes")selected="selected"@endif>Yes</option>
+                                            <option value=""Yes @if($loan->credit_cards == "Yes")selected="selected"@endif>Yes</option>
                                             <option value="No" @if($loan->credit_cards == "No")selected="selected"@endif>No</option>
                                         </select>
                                     </td>

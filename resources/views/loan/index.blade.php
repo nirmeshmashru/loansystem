@@ -42,7 +42,7 @@
                                         <td>{{$l->customer->last_name}}</td>
                                         <td>{{$l->period}}</td>
                                         <td>{{$l->amount}}</td>
-                                        <td><span class="label @if($l->status == 'pending') label-danger @else label-success @endif">{{$l->status}}</span></td>
+                                        <td><span class="label @if($l->status == 'Pending') label-danger @else label-success @endif">{{$l->status}}</span></td>
                                         <td>
                                             <a href="{{Route('loan.edit',$l->id)}}" class="btn btn-success"><i class="fa fa-edit" aria-hidden="true"></i></a>
                                             <a href="{{Route('loan.show',$l->id)}}" class="btn btn-default"><i class="fa fa-eye" aria-hidden="true"></i></a>
