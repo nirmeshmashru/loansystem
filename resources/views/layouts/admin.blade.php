@@ -87,6 +87,11 @@
                         <i class="fa fa-users"></i> <span>Customers</span>
                     </a>
                 </li>
+                <li class="treeview">
+                    <a href="{{url('user')}}">
+                        <i class="fa fa-user"></i> <span>Admin Users</span>
+                    </a>
+                </li>
             </ul>
         </section>
         <!-- /.sidebar -->
