@@ -40,6 +40,7 @@
                                         <select class="form-control" name="status">
                                             <option value="Pending" @if($loan->status == 'Pending')selected="selected"@endif>Pending</option>
                                             <option value="Approved" @if($loan->status == 'Approved')selected="selected"@endif>Approved</option>
+                                            <option value="Declined" @if($loan->status == 'Declined')selected="selected"@endif>Declined</option>
                                         </select>
                                 </tr>
                                 <tr>

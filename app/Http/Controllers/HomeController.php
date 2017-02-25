@@ -31,10 +31,11 @@ class HomeController extends Controller
         $total_loan = $this->loan->count();
         $pending_loan = $this->loan->whereStatus('Pending')->count();
         $approved_loan = $this->loan->whereStatus('Approved')->count();
+        $declined_loan = $this->loan->whereStatus('Declined')->count();
         $total_customers = $this->customer->count();
         return view('dashboard.home',
             ['total_loan'=>$total_loan,'pending_loan'=>$pending_loan,
-             'approved_loan'=>$approved_loan,'total_customers'=>$total_customers]);
+             'approved_loan'=>$approved_loan,'declined_loan'=>$declined_loan,'total_customers'=>$total_customers]);
     }
 
 }

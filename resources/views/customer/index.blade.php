@@ -51,11 +51,12 @@
                                 </tbody>
                                 <tfoot>
                                 <tr>
+                                    <th>SSN</th>
                                     <th>First Name</th>
                                     <th>Last Name</th>
-                                    <th>Period</th>
-                                    <th>Amount</th>
-                                    <th>Status</th>
+                                    <th>Phone</th>
+                                    <th>Email</th>
+                                    <th>Action</th>
                                 </tr>
                                 </tfoot>
                             </table>
