@@ -92,6 +92,11 @@
                         <i class="fa fa-user"></i> <span>Admin Users</span>
                     </a>
                 </li>
+                <li class="treeview">
+                    <a href="{{url('partner')}}">
+                        <i class="fa fa-university"></i> <span>Partners</span>
+                    </a>
+                </li>
             </ul>
         </section>
         <!-- /.sidebar -->

@@ -21,4 +21,5 @@ Auth::routes();
         Route::resource('loan', 'LoanController');
         Route::resource('user', 'UserController');
         Route::resource('customer', 'CustomerController');
+        Route::resource('partner', 'PartnerController');
     });
