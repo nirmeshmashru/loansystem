@@ -1,0 +1,35 @@
+#customer-service
+    font-weight: bolder
+    line-height: 31px
+    color: $color-text
+    height: 31px
+    background: $color-white
+
+    > section
+        +display-flex
+        +flex-direction(row)
+        +flex-justify(space-around)
+
+        > a
+            color: $color-text
+            text-decoration: none
+
+            &:last-child
+                color: $color-green
+
+@media only screen and (min-width : 768px)
+    #customer-service
+        margin-right: 19px
+
+        > section
+            max-width: 1170px
+            margin: 0 auto
+            +flex-justify(flex-end)
+
+            > a
+                display: inline-block
+                margin-left: 75px
+
+@media only screen and (min-width : 1024px)
+    #customer-service
+        margin-right: 0

@@ -27,6 +27,7 @@
                             <table id="example1" class="table table-bordered table-striped">
                                 <thead>
                                 <tr>
+                                    <th>Name</th>
                                     <th>API Key</th>
                                     <th>Status</th>
                                     <th>Action</th>
@@ -35,6 +36,7 @@
                                 <tbody>
                                 @foreach($partner as $part)
                                     <tr>
+                                        <td>{{$part->name}}</td>
                                         <td>{{$part->apikey}}</td>
                                         <td>{{$part->status}}</td>
                                         <td>
@@ -46,6 +48,7 @@
                                 </tbody>
                                 <tfoot>
                                 <tr>
+                                    <th>Name</th>
                                     <th>API Key</th>
                                     <th>Status</th>
                                     <th>Action</th>

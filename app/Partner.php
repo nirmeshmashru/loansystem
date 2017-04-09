@@ -13,5 +13,5 @@ class Partner extends Model
 
     protected $hidden = ['updated_at','deleted_at'];
 
-    protected $fillable = ['status','apikey'];
+    protected $fillable = ['name','status','apikey'];
 }

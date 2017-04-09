@@ -1,0 +1,59 @@
+.ui-spinner
+    width: 172px
+    margin: 0 auto
+    border-radius: 6px
+    border-collapse: collapse
+    overflow: hidden
+    +display-flex
+    +flex-direction(row)
+    +align-flex-item(center)
+
+    &.ui-widget.ui-widget-content
+        border: none
+
+    > input
+        order: 2
+        font-size: 18px
+        color: $color-slider-bg
+        height: 34px
+        border: 2px solid $color-gray-bg
+        border-right: none
+        border-left: none
+        border-radius: 0
+        margin: 0 38px
+        padding: 0 8px
+        width: 96px
+        text-align: center
+        -webkit-appearance: none
+
+    > a
+        border: none
+        border-radius: 0
+        width: 38px
+        height: 34px
+        background: $color-green
+        cursor: pointer
+        -webkit-appearance: none
+        +do-transition(opacity .3s ease)
+
+        &:hover
+            border: none
+            background: $color-green
+            opacity: .9
+
+        span
+            color: $color-white
+
+    > a:nth-child(2)
+        right: 0
+        left: auto
+
+        &.ui-button .ui-icon
+            background: url(../img/plus.png) center center no-repeat
+
+    > a:nth-child(3)
+        left: 0
+        right: auto
+
+        &.ui-button .ui-icon
+            background: url(../img/minus.png) center center no-repeat

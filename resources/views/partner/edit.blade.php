@@ -27,6 +27,10 @@
                                 <table class="table table-condensed">
                                 <tbody>
                                 <tr>
+                                    <th>Name</th>
+                                    <td><input type="text" class="form-control" name="name" value="{{$partner->name}}"/></td>
+                                </tr>
+                                <tr>
                                     <th>API Key</th>
                                     <td><input type="text" class="form-control" name="apikey" value="{{$partner->apikey}}"/></td>
                                 </tr>

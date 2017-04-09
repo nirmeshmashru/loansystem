@@ -1,0 +1,337 @@
+#page-home
+    background: url(../img/header-bg.jpg) left top no-repeat
+
+    #loan-details
+        min-height: 644px
+        +display-flex
+        +flex-direction(column)
+
+        #slogan
+            color: $color-white
+            padding: 30px 10px
+
+            h1
+                font-size: 24px
+                line-height: 1.2em
+                margin: 50px 0 .5em 0
+
+            p
+                font-size: 14px
+                line-height: 1.4em
+                margin: 0
+
+        #loan-application-form
+            border-radius: 10px
+            border-collapse: collapse
+            overflow: hidden
+            +add-shadow(0 0 3px 2px rgba(0,0,0,10/100))
+
+            > header
+                line-height: 63px
+                height: 63px
+                position: relative
+                border-bottom: 2px solid $color-green
+                background: $color-white
+
+                h2
+                    font-size: 18px
+                    color: $color-green
+                    padding-left: 9px
+                    margin: 0
+
+                img
+                    position: absolute
+                    right: 9px
+                    top: 0
+                    bottom: 0
+                    margin: auto
+
+            > div
+                background: $color-white
+                padding: 1em
+                +display-flex
+                +flex-direction(column)
+
+                > section
+                    width: 240px
+                    padding: .5em 0 3em 0
+                    text-align: center
+                    margin: 0 auto
+
+                    b
+                        font-size: 18px
+                        color: $color-text
+                        display: block
+                        text-align: center
+
+            > section
+                line-height: 1.2em
+                text-align: center
+                color: $color-white
+                background: $color-green
+                padding: 1.5em 20px 1em 20px
+
+                strong
+                    font-size: 18px
+                    margin-bottom: .5em
+                    display: block
+
+                span
+                    font-size: 12px
+
+    #personal-details
+        background: $color-white url(../img/single-application.png) -37px 115% no-repeat
+        min-height: 651px
+        padding-bottom: 200px
+
+        > div
+            +display-flex
+            +flex-direction(column-reverse)
+
+            #single-application
+                padding: 20px 0
+
+                h2
+                    line-height: 1.2em
+                    padding-left: 26px
+
+                ul
+                    padding: 20px 0 0 20px
+                    margin: 0
+
+                    li
+                        font-size: 11px
+                        font-weight: bolder
+                        padding: 0
+                        margin: 0 0 11px 0
+                        list-style: none
+
+                        &:nth-child(1)
+                            padding-left: 26px
+                        &:nth-child(2)
+                            padding-left: 66px
+                        &:nth-child(3)
+                            padding-left: 108px
+
+            > form
+                border-radius: 10px
+                border-collapse: collapse
+                overflow: hidden
+                +add-shadow(0 0 3px 2px rgba(0,0,0,10/100))
+
+                > section
+                    padding: 0 60px 20px 60px
+                    background: $color-white
+
+                    &.wide
+                        padding: 0 25px 20px 25px
+
+                        .right-aligned
+                            text-align: center
+                            margin-top: 3em
+
+                    &:nth-child(2)
+                        border-bottom: 2px solid $color-green
+
+                b
+                    font-size: 16px
+                    letter-spacing: -1px
+                    text-align: center
+                    color: $color-text
+                    display: block
+
+                > p
+                    font-size: 12px
+                    line-height: 1.2em
+                    margin: 0
+                    color: $color-white
+                    background: $color-green
+                    padding: 1.5em 20px 1em 20px
+
+    #our-partners, #customer-feedback
+        > section
+            text-align: center
+            max-width: 1170px
+            margin: 0 auto
+
+    #our-partners
+        padding: 1em 0 2.5em 0
+        background: $color-white
+
+        > section
+            > div
+                +display-flex
+                +flex-direction(column)
+                +flex-wrap(wrap)
+
+                > a
+                    margin: .5em 0
+
+            h3
+                margin-bottom: 1em
+
+    #customer-feedback
+        color: $color-text
+        background: $color-gray-bg
+
+        > section
+            padding: 2.5em 0 2em 0
+
+            h3
+                margin: 0
+
+            > p
+                font-size: 16px
+                font-style: italic
+                color: $color-text-lighter
+                margin: 1em 0 .4em 0
+
+                i
+                    color: $color-green
+
+            > span
+                font-size: 14px
+                font-weight: bolder
+                color: $color-green
+
+@media only screen and (max-width : 768px)
+    #page-home
+        #personal-details
+            > div
+                > form
+                    border-top-left-radius: 0
+                    border-top-right-radius: 0
+
+@media only screen and (min-width : 600px)
+    #page-home
+        #personal-details
+            padding-bottom: 215px
+
+            > div
+                #single-application
+                    span
+                        display: block
+
+@media only screen and (min-width : 1024px)
+    #page-home
+        #loan-details
+            max-width: 1170px
+            margin: 0 auto
+            padding-bottom: 130px
+            +flex-direction(row)
+            +flex-justify(space-between)
+            +align-flex-item(flex-start)
+
+            #slogan
+                h1
+                    font-size: 32px
+                    max-width: 320px
+                    margin-top: 70px
+
+                p
+                    font-size: 16px
+
+            #loan-application-form
+                width: 670px
+                min-width: 670px
+                float: right
+
+                margin-top: 130px
+
+                > header
+                    h2
+                        font-size: 24px
+                        text-align: center
+                        padding-left: 0
+
+                    img
+                        right: 18px
+
+                > div
+                    +flex-direction(row)
+                    +flex-justify(space-around)
+                    +align-flex-item(center)
+
+                    > section
+                        margin: 0
+                        padding: .5em 0
+
+                > section
+                    padding-left: 80px
+                    padding-right: 80px
+
+        #personal-details
+            background-position: 0 0
+            padding-bottom: 0
+
+            > div
+                max-width: 1170px
+                margin: 0 auto
+                +flex-direction(row)
+                +flex-justify(space-between)
+
+                #single-application
+                    ul
+                        padding: 0 0 0 56px
+                        margin: 54px 0 0 0
+
+                > form
+                    width: 670px
+                    margin-top: -144px
+
+                    b
+                        font-size: 18px
+                        text-align: left
+
+                    > section
+                        padding: 0 20px 20px 20px
+
+                        &:first-child
+                            padding-bottom: 0
+
+                        &.wide .wide:first-child
+                            margin-top: 0
+
+                    > p
+                        padding-left: 80px
+                        padding-right: 80px
+
+        #our-partners
+            clear: both
+
+            > section
+                > div
+                    +flex-direction(row)
+                    +flex-justify(space-around)
+
+                    > a
+                        padding: 0 30px
+
+@media only screen and (min-width : 1200px)
+    #page-home
+        #personal-details
+            > div
+                #single-application
+                    h2
+                        font-size: 24px
+                        margin-top: 20px
+                        padding-left: 40px
+
+                    ul
+                        padding: 0 0 0 52px
+                        margin: 46px 0 0 0
+
+                        li
+                            font-size: 18px
+                            font-weight: normal
+
+@media only screen and (min-width : 1400px)
+    #page-home
+        #personal-details
+            > div
+                #single-application
+                    h2
+                        padding-left: 0
+
+                    ul
+                        padding: 0 0 0 12px

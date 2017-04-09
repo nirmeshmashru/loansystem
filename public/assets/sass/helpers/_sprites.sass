@@ -1,0 +1,13 @@
+@import compass/utilities/sprites
+
+$icons: sprite-map("icons/*.png", $spacing: 0, $layout: horizontal)
+
+.icons
+	display: inline-block
+	background-image: sprite-url($icons)
+
+$icons-list: sprite-names( $icons )
+@each $icon in $icons-list
+	.icons.icons-#{$icon}
+		background-position: sprite-position($icons, #{$icon})
+		+sprite-dimensions($icons, #{$icon})
