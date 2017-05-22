@@ -8,25 +8,25 @@
     <meta name="description" content="">
     <title>FINANCE</title>
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="{{asset('assets/img/favicon/ms-icon-144x144.png')}}">
+    <meta name="msapplication-TileImage" content="public/assets/img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="{{asset('assets/img/favicon/apple-icon-57x57.png')}}">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{asset('assets/img/favicon/apple-icon-60x60.png')}}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{asset('assets/img/favicon/apple-icon-72x72.png')}}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('assets/img/favicon/apple-icon-76x76.png')}}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{asset('assets/img/favicon/apple-icon-114x114.png')}}">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{asset('assets/img/favicon/apple-icon-120x120.png')}}">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{asset('assets/img/favicon/apple-icon-144x144.png')}}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{asset('assets/img/favicon/apple-icon-152x152.png')}}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('assets/img/favicon/apple-icon-180x180.png')}}">
-    <link rel="icon" type="image/png" sizes="192x192" href="{{asset('assets/img/favicon/android-icon-192x192.png')}}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('assets/img/favicon/favicon-32x32.png')}}">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{asset('assets/img/favicon/favicon-96x96.png')}}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/img/favicon/favicon-16x16.png')}}">
-    <link rel="manifest" href="{{asset('assets/img/favicon/manifest.json')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/bower_components/jquery-ui/themes/base/jquery-ui.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/dist/css/styles.css')}}">
+    <link rel="apple-touch-icon" sizes="57x57" href="public/assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="public/assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="public/assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="public/assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="public/assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="public/assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="public/assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="public/assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="public/assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="public/assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="public/assets/img/favicon/manifest.json">
+    <link rel="stylesheet" type="text/css" href="public/assets/bower_components/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="public/assets/dist/css/styles.css">
 
 </head>
 <body>
@@ -51,7 +51,7 @@
             <section id="loan-application-form">
                 <header>
                     <h2>LOAN APPLICATION FORM</h2>
-                    <img src="{{asset('assets/img/norton-secured.png')}}" alt="">
+                    <img src="public/assets/img/norton-secured.png" alt="">
                 </header>
                 <div>
                     <section>
@@ -245,11 +245,11 @@
             <section>
                 <h3>OUR PARTNERS</h3>
                 <div>
-                    <a href="#" target="_blank"><img src="{{asset('assets/img/partners/fellow-finance.png')}}" alt=""></a>
-                    <a href="#" target="_blank"><img src="{{asset('assets/img/partners/euro-loan.png')}}" alt=""></a>
-                    <a href="#" target="_blank"><img src="{{asset('assets/img/partners/nordax-bank.png')}}" alt=""></a>
-                    <a href="#" target="_blank"><img src="{{asset('assets/img/partners/komplett.png')}}" alt=""></a>
-                    <a href="#" target="_blank"><img src="{{asset('assets/img/partners/bigbank.png')}}" alt=""></a>
+                    <a href="#" target="_blank"><img src="public/assets/img/partners/fellow-finance.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="public/assets/img/partners/euro-loan.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="public/assets/img/partners/nordax-bank.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="public/assets/img/partners/komplett.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="public/assets/img/partners/bigbank.png" alt=""></a>
                 </div>
             </section>
         </section>
@@ -299,10 +299,10 @@
             </section>
         </div>
     </section>
-    <script src="{{asset('assets/bower_components/jquery/dist/jquery.min.js')}}"></script>
-    <script src="{{asset('assets/bower_components/jquery-ui/jquery-ui.min.js')}}"></script>
+    <script src="public/assets/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="public/assets/bower_components/jquery-ui/jquery-ui.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-    <script src="{{asset('assets/dist/js/scripts.js')}}"></script>
+    <script src="public/assets/dist/js/scripts.js"></script>
 
 </main>
 </body>

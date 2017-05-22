@@ -7,16 +7,16 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
-    <link rel="stylesheet" href="{{asset("css/bootstrap.min.css")}}">
+    <link rel="stylesheet" href="{{asset("public/css/bootstrap.min.css")}}">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="{{asset("dist/css/AdminLTE.min.css")}}">
+    <link rel="stylesheet" href="{{asset("public/dist/css/AdminLTE.min.css")}}">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="{{asset("dist/css/skins/skin-green-light.min.css")}}">
+    <link rel="stylesheet" href="{{asset("public/dist/css/skins/skin-green-light.min.css")}}">
 
     @yield('css')
 
@@ -121,17 +121,17 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 2.2.3 -->
-<script src="{{asset("plugins/jQuery/jquery-2.2.3.min.js")}}"></script>
+<script src="{{asset("public/plugins/jQuery/jquery-2.2.3.min.js")}}"></script>
 <!-- Bootstrap 3.3.6 -->
-<script src="{{asset("js/bootstrap.min.js")}}"></script>
+<script src="{{asset("public/js/bootstrap.min.js")}}"></script>
 <!-- SlimScroll -->
-<script src="{{asset("plugins/slimScroll/jquery.slimscroll.min.js")}}"></script>
+<script src="{{asset("public/plugins/slimScroll/jquery.slimscroll.min.js")}}"></script>
 <!-- FastClick -->
-<script src="{{asset("plugins/fastclick/fastclick.js")}}"></script>
+<script src="{{asset("public/plugins/fastclick/fastclick.js")}}"></script>
 <!-- AdminLTE App -->
-<script src="{{asset("dist/js/app.min.js")}}"></script>
+<script src="{{asset("public/dist/js/app.min.js")}}"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="{{asset("dist/js/demo.js")}}"></script>
+<script src="{{asset("public/dist/js/demo.js")}}"></script>
 
 @yield('js')
 
