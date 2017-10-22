@@ -716,9 +716,9 @@
                     </tr>
                 </table>
                 <p class="h6">
-                    Arkadia Rahoitus on kotimainen palvelu, joka toimii apunasi lainanhaussa. Lähetämme
+                    finance24 on kotimainen palvelu, joka toimii apunasi lainanhaussa. Lähetämme
                     lainahakemuksesi eteenpäin lainanvälittäjälle, joka kilpailuttaa hakemuksesi pankeilla ja
-                    rahoitusyhtiöillä. Arkadia Rahoitus markkinoi Freedom Rahoituksen ja Rahalaitoksen luvanvaraisia
+                    rahoitusyhtiöillä. finance24 markkinoi Freedom Rahoituksen ja Rahalaitoksen luvanvaraisia
                     lainanvälityspalveluja. Autamme sinua myös lainanhaussa vertailemalla eri pankkeja ja
                     rahoitusyhtiöitä sekä jaamme hyödyllisiä talousvinkkejä. Palvelu on maksuton eikä sido sinua
                     mihinkään. <span class="text-white">Rekisteriselosteen löydät tästä.</span>
@@ -730,7 +730,7 @@
     </div>
     <div class="container copy-right w-100 bg-faded text-center p-3">
         <p class="h4 text-white">Ajankohtaista lainoista - Laina FAQ - Yrityslaina - Ota yhteyttä</p>
-        <p class="h7">Arkadia Rahoitus © 2017 | Linnankoskenkatu 1 A 11 | 00250 Helsinki |
+        <p class="h7">finance24 © 2017 | Linnankoskenkatu 1 A 11 | 00250 Helsinki |
             asiakaspalvelu@arkadiarahoitus.fi | Y-tunnus: FI-24645516</p>
     </div>
 </footer>
