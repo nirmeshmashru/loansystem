@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'DefaultController@index');
+Route::get('/index1', 'DefaultController@index1');
 Route::post('/loanstore', 'DefaultController@store')->name('loanstore');
 
 Auth::routes();

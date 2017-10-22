@@ -22,7 +22,12 @@ class DefaultController extends Controller
      */
     public function index()
     {
-        return view('index');
+        return view('index2');
+    }
+
+    public function index1()
+    {
+        return view('index1');
     }
 
     /**
@@ -46,18 +51,28 @@ class DefaultController extends Controller
         $customer = $this->customer->where('ssn',$request->ssn)->first();
         if($customer != ''){
             $this->loan->customer_id = $customer->id;
-            $this->loan->ip_address = $this->get_client_ip();
-            $this->loan->status = 'Pending';
-            $this->loan->fill($request->all());
-            $this->loan->save();
         }else{
             $this->customer->fill($request->all())->save();
             $this->loan->customer_id = $this->customer->id;
-            $this->loan->ip_address = $this->get_client_ip();
-            $this->loan->status = 'Pending';
-            $this->loan->fill($request->all());
-            $this->loan->save();
         }
+        $this->loan->ip_address = $this->get_client_ip();
+        $this->loan->status = 'Pending';
+        $this->loan->fill($request->all());
+        $cards = '';
+        foreach ($request->credit_cards as $card){
+            $cards .= $card.',';
+        }
+        $this->loan->credit_cards = $cards;
+        if(!empty($request->joint_venture_approval)){
+            $this->loan->joint_venture_approval = 1;
+        }
+        if(!empty($request->any_politically_influential)){
+            $this->loan->any_politically_influential = 1;
+        }
+        if(!empty($request->summer_cottage)){
+            $this->loan->summer_cottage = 1;
+        }
+        $this->loan->save();
         return redirect('/');
     }
 

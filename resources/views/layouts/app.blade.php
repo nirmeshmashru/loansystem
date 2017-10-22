@@ -11,7 +11,7 @@
     <title>{{ config('app.name', 'Loan') }}</title>
 
     <!-- Styles -->
-    <link href="public/css/app.css" rel="stylesheet">
+    <link href="{{asset('css/app.css')}}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -44,7 +44,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         &nbsp;
-                    </ul>
+                    </ul>*
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
@@ -82,6 +82,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="public/js/app.js"></script>
+    <script src="{{asset('js/app.js')}}"></script>
 </body>
 </html>

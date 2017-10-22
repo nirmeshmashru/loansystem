@@ -68,8 +68,13 @@
                                     <td><input type="text" class="form-control" name="employment_start_time" value="{{$loan->employment_start_time}}"/></td>
                                 </tr>
                                 <tr>
+                                    <th>Employment Start Time Year</th>
+                                    <td><input type="text" class="form-control" name="employment_start_time_year" value="{{$loan->employment_start_time_year}}"/></td>
+                                </tr>
+                                <tr>
                                     <th>Marital Status</th>
-                                    <td>
+                                    <td><input type="text" class="form-control" name="marital_status" value="{{$loan->marital_status}}"/></td>
+                                    {{--<td>
                                         <select name="marital_status" class="form-control">
                                             <option value="Married" @if($loan->marital_status == "Married")selected="selected"@endif>Married</option>
                                             <option value="Cohabitation" @if($loan->marital_status == "Cohabitation")selected="selected"@endif>Cohabitation</option>
@@ -77,7 +82,7 @@
                                             <option value="Divorced" @if($loan->marital_status == "Divorced")selected="selected"@endif>Divorced</option>
                                             <option value="Widow" @if($loan->marital_status == "Widow")selected="selected"@endif>Widow</option>
                                         </select>
-                                    </td>
+                                    </td>--}}
                                 </tr>
                                 <tr>
                                     <th>House Hold People</th>
@@ -128,16 +133,12 @@
                                 </tr>
                                 <tr>
                                     <th>Accomodation Type</th>
-                                    <td>
-                                        <select name="accomodation_type" class="form-control">
-                                            <option value=""Yes @if($loan->accomodation_type == "Yes")selected="selected"@endif>Yes</option>
-                                            <option value="No" @if($loan->accomodation_type == "No")selected="selected"@endif>No</option>
-                                        </select>
-                                    </td>
+                                    <td><input type="text" class="form-control" name="accomodation_type" value="{{$loan->accomodation_type}}"/></td>
                                 </tr>
                                 <tr>
                                     <th>Education Level</th>
-                                    <td>
+                                    <td><input type="text" class="form-control" name="education_level" value="{{$loan->education_level}}"/></td>
+                                    {{--<td>
                                         <select name="education_level" class="form-control">
                                             <option value="Primary School" @if($loan->education_level == "Primary School")@endif>Primary School</option>
                                             <option value="High School" @if($loan->education_level == "High School")@endif>High School</option>
@@ -145,11 +146,12 @@
                                             <option value="Bachelors Degree" @if($loan->education_level == "Bachelors School")@endif>Bachelors Degree</option>
                                             <option value="Master Degree" @if($loan->education_level == "Master School")@endif>Master Degree</option>
                                         </select>
-                                    </td>
+                                    </td>--}}
                                 </tr>
                                 <tr>
                                     <th>Employment Type</th>
-                                    <td>
+                                    <td><input type="text" class="form-control" name="employment_type" value="{{$loan->employment_type}}"/></td>
+                                    {{--<td>
                                         <select name="employment_type" class="form-control">
                                             <option value="Forced" @if($loan->employment_type == "Forced")selected="selected"@endif>Forced</option>
                                             <option value="Temporary" @if($loan->employment_type == "Temporary")selected="selected"@endif>Temporary</option>
@@ -159,11 +161,12 @@
                                             <option value="Pensioner" @if($loan->employment_type == "Pensioner")selected="selected"@endif>Pensioner</option>
                                             <option value="Student" @if($loan->employment_type == "Student")selected="selected"@endif>Student</option>
                                         </select>
-                                    </td>
+                                    </td>--}}
                                 </tr>
                                 <tr>
                                     <th>Apartment Type</th>
-                                    <td>
+                                    <td><input type="text" class="form-control" name="apartment_type" value="{{$loan->apartment_type}}"/></td>
+                                    {{--<td>
 
                                         <select name="apartment_type" class="form-control">
                                             <option value="Own" @if($loan->apartment_type == "Own")selected="selected"@endif>Own</option>
@@ -172,7 +175,7 @@
                                             <option value="Rental" @if($loan->apartment_type == "Rental")selected="selected"@endif>Rental</option>
                                             <option value="At parents" @if($loan->apartment_type == "At parents")selected="selected"@endif>At parents</option>
                                         </select>
-                                    </td>
+                                    </td>--}}
                                 </tr>
                                 <tr>
                                     <th>Summer Cottage</th>
@@ -180,13 +183,259 @@
                                 </tr>
                                 <tr>
                                     <th>Credit Cards</th>
-                                    <td>
-                                        <select name="credit_cards" class="form-control">
-                                            <option value=""Yes @if($loan->credit_cards == "Yes")selected="selected"@endif>Yes</option>
-                                            <option value="No" @if($loan->credit_cards == "No")selected="selected"@endif>No</option>
-                                        </select>
-                                    </td>
+                                    <td><input type="text" class="form-control" name="credit_cards" value="{{$loan->credit_cards}}"/></td>
                                 </tr>
+
+                                <tr>
+                                    <th>Monthly Payment</th>
+                                    <td><input type="text" class="form-control" name="monthly_payment" value="{{$loan->monthly_payment}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Cost & Interest</th>
+                                    <td><input type="text" class="form-control" name="cost_and_interest" value="{{$loan->cost_and_interest}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>No of children</th>
+                                    <td><input type="text" class="form-control" name="no_of_children" value="{{$loan->no_of_children}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>citizenship</th>
+                                    <td><input type="text" class="form-control" name="citizenship" value="{{$loan->citizenship}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Any Politically Influential?</th>
+                                    <td><input type="text" class="form-control" name="any_politically_influential" value="{{$loan->any_politically_influential}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>No of children</th>
+                                    <td><input type="text" class="form-control" name="no_of_children" value="{{$loan->no_of_children}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Moving Time</th>
+                                    <td><input type="text" class="form-control" name="moving_time" value="{{$loan->moving_time}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Business Id</th>
+                                    <td><input type="text" class="form-control" name="business_id" value="{{$loan->business_id}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Other Income Per Month</th>
+                                    <td><input type="text" class="form-control" name="other_income_per_month" value="{{$loan->other_income_per_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Source of other income</th>
+                                    <td><input type="text" class="form-control" name="source_of_other_income" value="{{$loan->source_of_other_income}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Mortage Left</th>
+                                    <td><input type="text" class="form-control" name="mortage_left" value="{{$loan->mortage_left}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Mortage month</th>
+                                    <td><input type="text" class="form-control" name="mortage_month" value="{{$loan->mortage_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Consumer credit left</th>
+                                    <td><input type="text" class="form-control" name="consumer_credit_left" value="{{$loan->consumer_credit_left}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Consumer credit month</th>
+                                    <td><input type="text" class="form-control" name="consumer_credit_month" value="{{$loan->consumer_credit_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Boat loan left</th>
+                                    <td><input type="text" class="form-control" name="boat_loan_left" value="{{$loan->boat_loan_left}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Boat loan month</th>
+                                    <td><input type="text" class="form-control" name="boat_loan_month" value="{{$loan->boat_loan_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Credit card left</th>
+                                    <td><input type="text" class="form-control" name="credit_card_left" value="{{$loan->credit_card_left}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Credit card month</th>
+                                    <td><input type="text" class="form-control" name="credit_card_month" value="{{$loan->credit_card_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Quick loan left</th>
+                                    <td><input type="text" class="form-control" name="quick_loan_left" value="{{$loan->quick_loan_left}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Quick loan month</th>
+                                    <td><input type="text" class="form-control" name="quick_loan_month" value="{{$loan->quick_loan_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Guarantees Left</th>
+                                    <td><input type="text" class="form-control" name="guarantees_left" value="{{$loan->guarantees_left}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Guarantees month</th>
+                                    <td><input type="text" class="form-control" name="guarantees_month" value="{{$loan->guarantees_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Payabal maintance left</th>
+                                    <td><input type="text" class="form-control" name="payabal_maintance_left" value="{{$loan->payabal_maintance_left}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>payabal_maintance_month</th>
+                                    <td><input type="text" class="form-control" name="payabal_maintance_month" value="{{$loan->payabal_maintance_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>installment_paln_left</th>
+                                    <td><input type="text" class="form-control" name="installment_paln_left" value="{{$loan->installment_paln_left}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>installment_paln_month</th>
+                                    <td><input type="text" class="form-control" name="installment_paln_month" value="{{$loan->installment_paln_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>other_debts_left</th>
+                                    <td><input type="text" class="form-control" name="other_debts_left" value="{{$loan->other_debts_left}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>other_debts_month</th>
+                                    <td><input type="text" class="form-control" name="other_debts_month" value="{{$loan->other_debts_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>housing_cost_month</th>
+                                    <td><input type="text" class="form-control" name="housing_cost_month" value="{{$loan->housing_cost_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>other_expenses_month</th>
+                                    <td><input type="text" class="form-control" name="other_expenses_month" value="{{$loan->other_expenses_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>monthly_income_of_spouse</th>
+                                    <td><input type="text" class="form-control" name="monthly_income_of_spouse" value="{{$loan->monthly_income_of_spouse}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>monthly_cost_of_spouse</th>
+                                    <td><input type="text" class="form-control" name="monthly_cost_of_spouse" value="{{$loan->monthly_cost_of_spouse}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>bic</th>
+                                    <td><input type="text" class="form-control" name="bic" value="{{$loan->bic}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Is Joint partner?</th>
+                                    <td><input type="text" class="form-control" name="joint_partner" value="{{$loan->joint_partner}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>joint_first_name</th>
+                                    <td><input type="text" class="form-control" name="joint_first_name" value="{{$loan->joint_first_name}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>joint_last_name</th>
+                                    <td><input type="text" class="form-control" name="joint_last_name" value="{{$loan->joint_last_name}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>joint_ssn</th>
+                                    <td><input type="text" class="form-control" name="joint_ssn" value="{{$loan->joint_ssn}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>joint_email</th>
+                                    <td><input type="text" class="form-control" name="joint_email" value="{{$loan->joint_email}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>joint_phone</th>
+                                    <td><input type="text" class="form-control" name="joint_phone" value="{{$loan->joint_phone}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>joint_net_salary_per_month</th>
+                                    <td><input type="text" class="form-control" name="joint_net_salary_per_month" value="{{$loan->joint_net_salary_per_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>joint_education_level</th>
+                                    <td><input type="text" class="form-control" name="joint_education_level" value="{{$loan->joint_education_level}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>joint_employment_type</th>
+                                    <td><input type="text" class="form-control" name="joint_employment_type" value="{{$loan->joint_employment_type}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>joint_business_id</th>
+                                    <td><input type="text" class="form-control" name="joint_business_id" value="{{$loan->joint_business_id}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>mortage_joint_left</th>
+                                    <td><input type="text" class="form-control" name="mortage_joint_left" value="{{$loan->mortage_joint_left}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>mortage_joint_month</th>
+                                    <td><input type="text" class="form-control" name="mortage_joint_month" value="{{$loan->mortage_joint_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>consumer_credit_joint_left</th>
+                                    <td><input type="text" class="form-control" name="consumer_credit_joint_left" value="{{$loan->consumer_credit_joint_left}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>consumer_credit_joint_month</th>
+                                    <td><input type="text" class="form-control" name="consumer_credit_joint_month" value="{{$loan->consumer_credit_joint_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>boat_loan_joint_left</th>
+                                    <td><input type="text" class="form-control" name="boat_loan_joint_left" value="{{$loan->boat_loan_joint_left}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>boat_loan_joint_month</th>
+                                    <td><input type="text" class="form-control" name="boat_loan_joint_month" value="{{$loan->boat_loan_joint_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>credit_card_joint_left</th>
+                                    <td><input type="text" class="form-control" name="credit_card_joint_left" value="{{$loan->credit_card_joint_left}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>credit_card_joint_month</th>
+                                    <td><input type="text" class="form-control" name="credit_card_joint_month" value="{{$loan->credit_card_joint_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>quick_loan_joint_left</th>
+                                    <td><input type="text" class="form-control" name="quick_loan_joint_left" value="{{$loan->quick_loan_joint_left}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>guarantees_joint_left</th>
+                                    <td><input type="text" class="form-control" name="guarantees_joint_left" value="{{$loan->guarantees_joint_left}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>guarantees_joint_month</th>
+                                    <td><input type="text" class="form-control" name="guarantees_joint_month" value="{{$loan->guarantees_joint_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>payabal_maintance_joint_left</th>
+                                    <td><input type="text" class="form-control" name="payabal_maintance_joint_left" value="{{$loan->payabal_maintance_joint_left}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>payabal_maintance_joint_month</th>
+                                    <td><input type="text" class="form-control" name="payabal_maintance_joint_month" value="{{$loan->payabal_maintance_joint_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>installment_paln_joint_left</th>
+                                    <td><input type="text" class="form-control" name="installment_paln_joint_left" value="{{$loan->installment_paln_joint_left}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>installment_paln_joint_month</th>
+                                    <td><input type="text" class="form-control" name="installment_paln_joint_month" value="{{$loan->installment_paln_joint_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>other_debts_joint_left</th>
+                                    <td><input type="text" class="form-control" name="other_debts_joint_left" value="{{$loan->other_debts_joint_left}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>other_debts_joint_month</th>
+                                    <td><input type="text" class="form-control" name="other_debts_joint_month" value="{{$loan->other_debts_joint_month}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>joint_venture_approval</th>
+                                    <td><input type="text" class="form-control" name="joint_venture_approval" value="{{$loan->joint_venture_approval}}"/></td>
+                                </tr>
+                                <tr>
+                                    <th>purpose_of_loan</th>
+                                    <td><input type="text" class="form-control" name="purpose_of_loan" value="{{$loan->purpose_of_loan}}"/></td>
+                                </tr>
+
+
                                 <tr>
                                     <td colspan="2" class="text-center">
                                         {!! csrf_field() !!}

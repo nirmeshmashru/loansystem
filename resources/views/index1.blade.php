@@ -160,7 +160,7 @@
                             <div class="col-xs-12 col-sm-6 col-md-4 form__textinput">
                                 <div class="form-group">
                                     <select class="form-control" id="maritalstatus" name="marital_status">
-                                        <option>Siviilisääty..</option>
+                                        <option>Siviilisääty</option>
                                         <option>Naimisissa</option>
                                         <option>Avoliitto</option>
                                         <option>Naimaton</option>
