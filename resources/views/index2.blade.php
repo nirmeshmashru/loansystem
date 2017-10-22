@@ -39,7 +39,7 @@
                 ILMAN VAKUUKSIA TAI TAKAAJIA
             </div>
             <div class="h5 ff-ASUF">
-                <p>Arkadia Rahoituksen kautta löydät helposti ja nopeasti juuri itsellesi sopivimman
+                <p>finance24 kautta löydät helposti ja nopeasti juuri itsellesi sopivimman
                     rahoitusratkaisun eri rahoitusyhtiöiden ja pankkien tarjonnasta. Palvelu on maksuton!</p>
                 <p>Jätä hakemus nyt, saat lainatarjoukset nopeammin!</p>
             </div>
