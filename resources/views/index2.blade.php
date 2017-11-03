@@ -15,6 +15,7 @@
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
             integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
             crossorigin="anonymous">
+    <link href="{{asset('v2/assets/css/animate.css/animate.min.css')}}" rel="stylesheet">
     <!--<link-->
     <!--rel="stylesheet"-->
     <!--href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
@@ -22,17 +23,17 @@
     <link rel="stylesheet" type="text/css" href="{{asset("v2/assets/css/styles.min.css")}}"/>
 
 </head>
-<body>
+<body class="bg-img-1">
 
 
 <header class="bg-w w-100 ff-SFNSD">
     <div class="container h2 p-3 text-info">Logo</div>
 </header>
 <div class="body container">
-    <form action="{{Route('loanstore')}}" method="POST" name="loanForm" id="loanForm">
+    <form action="{{Route('loanstore')}}" method="POST" name="loanForm" id="loanForm" novalidate>
         {{ csrf_field() }}
     <div class="row">
-        <div class="col-md-6 col-12 block_1_1">
+        <div class="col-md-6 col-12 block_1_1 pb-4">
 
             <div class="h3 text-info ff-SFNSD">
                 LAINAA 500 – 50 000 EUROA <br>
@@ -51,7 +52,7 @@
                     </td>
                     <td width="*">
                         <p class="h4 text-info">MINKÄLAISEN LAINAN TARVITSET?</p>
-                        <p class="h6">
+                        <p class="h6 ff-ASUF">
                             Aloita valitsemalla lainasumma, laina-aika sekä anna sähköpostiosoitteesi ja
                             matkapuhelinnumerosi.
                         </p>
@@ -59,12 +60,12 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="stovbnjak bg-active"></div>
-                        <div class="circle c-active bg-active"><span class="ff-SFNSD text-white h3">2</span></div>
-                        <div class="stovbnjak bg-active"></div>
+                        <div class="stovbnjak bg-muted"></div>
+                        <div class="circle bg-muted"><span class="ff-SFNSD text-white h3">2</span></div>
+                        <div class="stovbnjak bg-muted"></div>
                     </td>
                     <td><p class="h4 text-info">TÄYTÄ LAINAHAKEMUS</p>
-                        <p class="h6">
+                        <p class="h6 ff-ASUF">
                             Anna perustiedot itsestäsi sekä mahdollisesta yhteishakijasta ja lähetä hakemuksesi,
                             jotta voimme etsiä juuri sinulle sopivimman rahoituksen.
                         </p>
@@ -77,23 +78,23 @@
                     </td>
                     <td>
                         <p class="h4 text-info">NOPEA VASTAUS</p>
-                        <p class="h6">
+                        <p class="h6 ff-ASUF">
                             Saat yleensä yhden arkipäivän sisällä useita lainatarjouksia, joista voit valita
                             sopivimman. Voit saada rahat tilillesi jopa samana päivänä.
                         </p>
                     </td>
                 </tr>
             </table>
-            <div class="custom-border">
+            <div class="custom-border" style="display: none">
             </div>
         </div>
-        <div class="col-md-6 col-12 block_1_2 bg-w">
+        <div class="col-md-6 col-12 block_1_2 bg-w border-bottom">
             <div class="mt-4 h3 ff-SFNSD text-info text-center">TÄYTÄ ILMAINEN LAINAHAKEMUS<br>
                 (SAAT LAINAPÄÄTÖKSEN HETI)
             </div>
             <hr style="width: 240px">
             <div id="slider1" class="block_1_2_">
-                <div class="title d-flex justify-content-between row">
+                <div class="form-group d-flex justify-content-between row">
                     <label class="col-4 align-self-center">Lainasumma:</label>
                     <input class="col-5 align-self-center value" type="text" name="amount" required="required"/>
                     <div class=" col-3 unit h3 align-self-center text-info ff-SFNSD">euroa</div>
@@ -105,7 +106,7 @@
                 </div>
             </div>
             <div id="slider2" class="block_1_2_">
-                <div class="title d-flex justify-content-between row">
+                <div class="form-group d-flex justify-content-between row">
                     <label class="col-4 align-self-center">Lainasumma:</label>
                     <input class="col-5 align-self-center value" type="text" name="period" required="required"/>
                     <div class="col-3 unit h3 align-self-center text-info ff-SFNSD">euroa</div>
@@ -127,11 +128,51 @@
                     <input class="col-5 align-self-center value bg-blue" value="475" type="text" name="cost_and_interest" required="required"/>
                     <div class="col-3 unit h3 align-self-center text-info ff-SFNSD">euroa</div>
                 </div>
-                <div class="col-md-12 pull-right" id="myBtn">
-                    <button class="btn btn-primary" type="button" onclick="$('#MainDiv').show(),$('#myBtn').hide()">Aloita lainahakemus</button>
-                </div>
             </div>
+                <div class="item form-group input-text">
+                    <label class="h4 text-info">Sähköpostiosoite:</label>
+                    <input class="required" name="from_email" placeholder="fedarovich32@gmail.com" type="text" id="from_email" />
+                </div>
+                <div class="item form-group input-text item">
+                    <label class="h4 text-info">Matkapuhelin:</label>
+                    <input class="required" name="from_phone" placeholder="3549000078978" type="text" id="from_phone"/>
+                </div>
+                {{--<div class="col-md-12 pull-right" >
+                    <button class="btn btn-primary" type="button" onclick="$('#MainDiv').show(),$('#myBtn').hide()">Aloita lainahakemus</button>
+                </div>--}}
+                <div class="w-100 text-center" id="myBtn">
+                    <a href="javascript:void(0)" onclick="openApplicationForm()">
+                        <img src="v2/src/img/button.png" >
+                    </a>
+                </div>
+                <div class="w-100 text-center pb-4">
+                    <img src="v2/src/img/Bitmap.png">
+                </div>
+                <div class="h6 ff-ASUF text-muted">
+                    Hakemuksen käsittelee kumppanimme, joka on luvanvarainen lainanvälittäjä.
+                    <p class="mt-2 mb-2 text-black">
+                        *Kuukausierä on laskettu 10,90 % esimerkkikorolla
+                    </p>
+                    Esimerkkilaskelma: Todellinen vuosikorko on 13,12 %, kun lainasumma on 10 000 €, takaisinmaksuaika on 5 vuotta, tilinhoitomaksu 5 €, avausmaksu 150 € ja esimerkkikorko 10,9 %. Takaisinmaksettava summa on tällöin 13 465 €, eli 216,93 €/kk.
+                    <br>
+                    <br>
+                    Todellinen vuosikorko maks. 4,9–50 %. Laina-aika 1–15 vuotta.
+                    <p class="mt-2 mb-2 text-black">
+                        Perusvaatimukset:
+                    </p>
+                    - Olet vähintään 20-vuotias<br>
+                    - Säännölliset palkka- tai eläketulot<br>
+                    - Ei maksuhäiriömerkintöjä<br>
+                </div>
+                <div class="m-3">
+                    <img src="v2/src/img/Shape.png">
+                    <span class="h6 m-2 text-muted">09 42705041</span>
+                </div>
 
+
+        </div>
+        <div class="girl hidden-sm-down">
+            <img src="v2/src/img/Bitmap1.png">
         </div>
     </div>
     <div class="block_2 bg-w p-3" style="display: none" id="MainDiv">
@@ -140,7 +181,7 @@
             <div class="row form-group">
                 <div class="col-12 col-md-6 col-lg-3 input-text">
                     <label>Sähköpostiosoite</label>
-                    <input type="text" class="w-100" name="email"/>
+                    <input type="text" class="w-100" name="email" id="email"/>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 input-text">
                     <label>Etunimi</label>
@@ -156,9 +197,9 @@
                 </div>
             </div>
             <div class="row form-group">
-                <div class="col-12 col-md-6 col-lg-3 select-custom">
+                <div class="col-12 col-md-6 col-lg-3 item">
                     <label>Siviilisääty</label>
-                    <select class="" name="marital_status" >
+                    <select class="required" name="marital_status" >
                         <option value="">-Valitse-</option>
                         <option value="Naimisissa">Naimisissa</option>
                         <option value="Avoliitto">Avoliitto</option>
@@ -181,7 +222,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 select-custom">
                     <label>Kansalaisuus</label>
-                    <select name="citizenship" required="required">
+                    <select name="citizenship" >
                         <option value="">-Valitse-</option><option value="1">Suomi</option><option value="2">Muu</option>
                     </select>
                 </div>
@@ -199,29 +240,29 @@
         <section>
             <div class="h3 text-info">2. Asuminen & yhteystiedot</div>
             <div class="row form-group">
-                <div class="col-12 col-md-6 col-lg-3 input-text">
+                <div class="item col-12 col-md-6 col-lg-3 input-text">
                     <label>Osoite</label>
-                    <input type="text" name="address"/>
+                    <input type="text" class="required" name="address"/>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 input-text">
+                <div class="item col-12 col-md-6 col-lg-3 input-text">
                     <label>Postinumero</label>
-                    <input type="text" name="zipcode"/>
+                    <input type="text" class="required" name="zipcode"/>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 input-text">
+                <div class="item col-12 col-md-6 col-lg-3 input-text">
                     <label>Postitoimipaikka</label>
-                    <input type="text" name="pobox"/>
+                    <input type="text" name="pobox" class="required"/>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 select-custom">
+                <div class="name col-12 col-md-6 col-lg-3 select-custom">
                     <label>Asumismuoto</label>
-                    <select name="accomodation_type">
+                    <select name="accomodation_type" class="required">
                         <option value="NotSpecified">-Valitse-</option><option value="OwnProperty">Oma asunto</option><option value="Tenant">Asumisoikeusasunto / Osa-omistus</option><option value="MunicipalTenancy">Kunnan vuokra-asunto</option><option value="PrivateTenancy">Yksityinen vuokra-asunto</option><option value="WithParents">Vanhempien luona</option><option value="Lodger">Muu</option>
                     </select>
                 </div>
             </div>
             <div class="row form-group">
-                <div class="col-12 col-md-6 col-lg-3 input-text">
+                <div class="item col-12 col-md-6 col-lg-3 input-text">
                     <label>(Matka-)puhelin</label>
-                    <input type="text" name="phone"/>
+                    <input type="text" name="phone" id="phone" class="required"/>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 select-custom">
                     <label>Asunnon tyyppi</label>
@@ -233,9 +274,9 @@
                     <label>Asunnon pinta-ala (m2)</label>
                     <input type="text" name="apartment_size"/>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 input-text">
+                <div class="col-12 col-md-6 col-lg-3 input-text item">
                     <label>Muuttoajankohta</label>
-                    <input type="text" name="moving_time"/>
+                    <input type="text" name="moving_time" class="required"/>
                 </div>
             </div>
             <div class="row">
@@ -275,35 +316,35 @@
                 </div>--}}
             </div>
             <div class="row form-group">
-                <div class="col-12 col-md-6 col-lg-3 input-text">
+                <div class="col-12 col-md-6 col-lg-3 input-text item">
                     <label>Bruttopalkka kuukaudessa
                         <div class="h7">(ennen veroja)</div>
                     </label>
-                    <input type="text" name="gross_monthly_income"/>
+                    <input type="text" name="gross_monthly_income" class="required"/>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 input-text">
+                <div class="col-12 col-md-6 col-lg-3 input-text item">
                     <label>Nettopalkka kuukaudessa
                         <div class="h7">(verojen jälkeen)</div>
                     </label>
-                    <input type="text" name="net_monthly_income"/>
+                    <input type="text" name="net_monthly_income" class="required"/>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 input-text">
+                <div class="col-12 col-md-6 col-lg-3 input-text item">
                     <label>Muut tulot kuukaudessa
                         <div class="h7">&nbsp;</div>
                     </label>
-                    <input type="text" name="other_income_per_month"/>
+                    <input type="text" name="other_income_per_month" class="required"/>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 input-text">
+                <div class="col-12 col-md-6 col-lg-3 input-text item">
                     <label>Muiden tulojen lähde
                         <div class="h7">&nbsp;</div>
                     </label>
-                    <input type="text" name="source_of_other_income"/>
+                    <input type="text" name="source_of_other_income" class="required"/>
                 </div>
             </div>
             <div class="row form-group">
-                <div class="col-12 col-md-6 col-lg-3 input-text">
+                <div class="col-12 col-md-6 col-lg-3 input-text item">
                     <label>Työsuhde</label>
-                    <input type="text" name="employer"/>
+                    <input type="text" name="employer" class="required"/>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 input-text"></div>
                 <div class="col-12 col-md-6 col-lg-3 input-text"></div>
@@ -486,9 +527,9 @@
         <section>
             <div class="h3 text-info">5. Pankkitiedot</div>
             <div class="row">
-                <div class="col-12 col-md-7 col-lg-5  pankkitiedot-input">
+                <div class="col-12 col-md-7 col-lg-5  pankkitiedot-input item">
                     <label>Pankkitili (IBAN)</label>
-                    <input type="text" value="esim: f9890989057509676967404" name="bank_account"/>
+                    <input type="text" placeholder="esim: f9890989057509676967404" name="bank_account" class="required"/>
                 </div>
                 <div class="col-10 col-md-4 col-lg-3 select-custom">
                     <label>BIC</label>
@@ -663,8 +704,8 @@
                 <div class="col-12 col-md-6 col-lg-3 input-text"></div>
                 <div class="col-12 col-md-6 col-lg-3 input-text"></div>
             </div>
-            <label class="custom-control custom-checkbox ">
-                <input type="checkbox" class="custom-control-input" required="required">
+            <label class="custom-control custom-checkbox item">
+                <input type="checkbox" class="custom-control-input required" >
                 <span class="custom-control-indicator"></span>
                 <span class="custom-control-description h4 text-info">
                             Hyväksyn Omalaina.fin yleiset palveluehdot.
@@ -680,7 +721,7 @@
             </label>
 
         </section>
-        <div class="Hae-Nyt-button">
+        <div class="Hae-Nyt-button text-center">
 
             <input type="image" src="v2/src/img/button.png"/>
 
@@ -731,7 +772,7 @@
     <div class="container copy-right w-100 bg-faded text-center p-3">
         <p class="h4 text-white">Ajankohtaista lainoista - Laina FAQ - Yrityslaina - Ota yhteyttä</p>
         <p class="h7">finance24 © 2017 | Linnankoskenkatu 1 A 11 | 00250 Helsinki |
-            asiakaspalvelu@arkadiarahoitus.fi | Y-tunnus: FI-24645516</p>
+            finance24.fi </p>
     </div>
 </footer>
 
@@ -756,6 +797,12 @@
         crossorigin="anonymous"></script>
 
 <!--<script src={{asset("v2/assets/js/bundle.js")}}></script>-->
+<script src="{{asset('v2/assets/js/validator/validator.js')}}" type="text/javascript"></script>
 <script src="{{asset("v2/src/js/index.js")}}"></script>
+<script>
+    $(document).ready(function (){
+        init_validator();
+    });
+</script>
 </body>
 </html>
