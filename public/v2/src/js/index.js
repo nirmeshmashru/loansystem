@@ -48,8 +48,10 @@ function openApplicationForm(e) {
     $('#myBtn').hide();
     $('.custom-border').show();
     $('.girl').hide();
+    $('#border-bottom').removeClass('border-bottom');
     $('#email').val($('#from_email').val());
     $('#phone').val($('#from_phone').val());
+    $("#loanForm").submit();
   }else{
     $("#loanForm").submit();
   }

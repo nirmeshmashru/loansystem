@@ -88,7 +88,7 @@
             <div class="custom-border" style="display: none">
             </div>
         </div>
-        <div class="col-md-6 col-12 block_1_2 bg-w border-bottom">
+        <div class="col-md-6 col-12 block_1_2 bg-w border-bottom" id="border-bottom">
             <div class="mt-4 h3 ff-SFNSD text-info text-center">TÄYTÄ ILMAINEN LAINAHAKEMUS<br>
                 (SAAT LAINAPÄÄTÖKSEN HETI)
             </div>
