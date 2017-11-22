@@ -21,7 +21,10 @@
     <!--href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
 
     <link rel="stylesheet" type="text/css" href="{{asset("v2/assets/css/styles.min.css")}}"/>
-
+<!-- Start of terminushelp Zendesk Widget script -->
+<script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(e){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var e=this.createElement("script");n&&(this.domain=n),e.id="js-iframe-async",e.src="https://assets.zendesk.com/embeddable_framework/main.js",this.t=+new Date,this.zendeskHost="terminushelp.zendesk.com",this.zEQueue=a,this.body.appendChild(e)},o.write('<body onload="document._l();">'),o.close()}();
+/*]]>*/</script>
+<!-- End of terminushelp Zendesk Widget script -->
 </head>
 <body class="bg-img-1">
 
@@ -36,13 +39,10 @@
         <div class="col-md-6 col-12 block_1_1 pb-4">
 
             <div class="h3 text-info ff-SFNSD">
-                LAINAA 500 – 50 000 EUROA <br>
-                ILMAN VAKUUKSIA TAI TAKAAJIA
+           VAKUUDETON LAINA AINA 50 000€ ASTI 
             </div>
             <div class="h5 ff-ASUF">
-                <p>finance24 kautta löydät helposti ja nopeasti juuri itsellesi sopivimman
-                    rahoitusratkaisun eri rahoitusyhtiöiden ja pankkien tarjonnasta. Palvelu on maksuton!</p>
-                <p>Jätä hakemus nyt, saat lainatarjoukset nopeammin!</p>
+                <p>Lainakonttori kilpailuttaa pankit ja rahoituslaitokset puolestasi.</p> <p>Kauttamme tarpeisiisi ja olosuhteisiisi parhaiten istuvat lainatarjoukset maksutta. Yhdellä hakemuksella vaivatta. </p>
             </div>
             <table class="ff-ASUF text-muted w-100">
                 <tr>
@@ -51,10 +51,9 @@
                         <div class="stovbnjak bg-active"></div>
                     </td>
                     <td width="*">
-                        <p class="h4 text-info">MINKÄLAISEN LAINAN TARVITSET?</p>
+                        <p class="h4 text-info">VALITSE LAINASUMMA JA TAKAISINMAKSUAIKA </p>
                         <p class="h6 ff-ASUF">
-                            Aloita valitsemalla lainasumma, laina-aika sekä anna sähköpostiosoitteesi ja
-                            matkapuhelinnumerosi.
+                           Lainasumman perusteella käyttöösi avautuu räätäköity hakemuslomake. Täytä lomake huolellisesti. 
                         </p>
                     </td>
                 </tr>
@@ -62,12 +61,13 @@
                     <td>
                         <div class="stovbnjak bg-muted"></div>
                         <div class="circle bg-muted"><span class="ff-SFNSD text-white h3">2</span></div>
+
                         <div class="stovbnjak bg-muted"></div>
                     </td>
-                    <td><p class="h4 text-info">TÄYTÄ LAINAHAKEMUS</p>
+<td>
+<p class="h4 text-info">VERTAILE LAINATARJOUKSIA</p>
                         <p class="h6 ff-ASUF">
-                            Anna perustiedot itsestäsi sekä mahdollisesta yhteishakijasta ja lähetä hakemuksesi,
-                            jotta voimme etsiä juuri sinulle sopivimman rahoituksen.
+                            Lainahakemuslomakkeen täytöstä 24 tunnin sisällä saat eri lainatarjouksia pankeilta ja rahoituslaitoksilta. Vertaile ehtoja huolellisesti.
                         </p>
                     </td>
                 </tr>
@@ -77,10 +77,9 @@
                         <div class="circle bg-muted"><span class="ff-SFNSD text-white h3">3</span></div>
                     </td>
                     <td>
-                        <p class="h4 text-info">NOPEA VASTAUS</p>
+                        <p class="h4 text-info">HYVÄKSY PARAS TARJOUS</p>
                         <p class="h6 ff-ASUF">
-                            Saat yleensä yhden arkipäivän sisällä useita lainatarjouksia, joista voit valita
-                            sopivimman. Voit saada rahat tilillesi jopa samana päivänä.
+                           Hyväksy mieluisin seuraamalla tarjouksessa olevia ohjeita. Rahat saat nostettua tilillesi yleensä välittömästi lainatarjouksen hyväksymisen jälkeen.  
                         </p>
                     </td>
                 </tr>
@@ -89,8 +88,8 @@
             </div>
         </div>
         <div class="col-md-6 col-12 block_1_2 bg-w border-bottom" id="border-bottom">
-            <div class="mt-4 h3 ff-SFNSD text-info text-center">TÄYTÄ ILMAINEN LAINAHAKEMUS<br>
-                (SAAT LAINAPÄÄTÖKSEN HETI)
+            <div class="mt-4 h3 ff-SFNSD text-info text-center">TÄYTÄ ILMAINEN LAINAHAKEMUS 
+SAAT LAINATARJOUKSEN HETI  
             </div>
             <hr style="width: 240px">
             <div id="slider1" class="block_1_2_">
@@ -107,9 +106,9 @@
             </div>
             <div id="slider2" class="block_1_2_">
                 <div class="form-group d-flex justify-content-between row">
-                    <label class="col-4 align-self-center">Lainasumma:</label>
+                    <label class="col-4 align-self-center">Laina-aika:</label>
                     <input class="col-5 align-self-center value" type="text" name="period" required="required"/>
-                    <div class="col-3 unit h3 align-self-center text-info ff-SFNSD">euroa</div>
+                    <div class="col-3 unit h3 align-self-center text-info ff-SFNSD">vuotta</div>
                 </div>
                 <div class="choice d-flex justify-content-between row">
                     <label class="col-2 from align-self-center">1 vuosi</label>
@@ -131,11 +130,11 @@
             </div>
                 <div class="item form-group input-text">
                     <label class="h4 text-info">Sähköpostiosoite:</label>
-                    <input class="required" name="from_email" placeholder="fedarovich32@gmail.com" type="text" id="from_email" />
+                    <input class="required" name="from_email" placeholder="test@gmail.com" type="text" id="from_email" />
                 </div>
                 <div class="item form-group input-text item">
                     <label class="h4 text-info">Matkapuhelin:</label>
-                    <input class="required" name="from_phone" placeholder="3549000078978" type="text" id="from_phone"/>
+                    <input class="required" name="from_phone" placeholder="000000" type="text" id="from_phone"/>
                 </div>
                 {{--<div class="col-md-12 pull-right" >
                     <button class="btn btn-primary" type="button" onclick="$('#MainDiv').show(),$('#myBtn').hide()">Aloita lainahakemus</button>
@@ -149,7 +148,7 @@
                     <img src="v2/src/img/Bitmap.png">
                 </div>
                 <div class="h6 ff-ASUF text-muted">
-                    Hakemuksen käsittelee kumppanimme, joka on luvanvarainen lainanvälittäjä.
+                    Hakemukset välitetään Lainakonttorin yhteistyökumppaneille, jotka ovat pankkeja ja luvanvaraisia rahoituslaitoksia. .
                     <p class="mt-2 mb-2 text-black">
                         *Kuukausierä on laskettu 10,90 % esimerkkikorolla
                     </p>
@@ -157,16 +156,12 @@
                     <br>
                     <br>
                     Todellinen vuosikorko maks. 4,9–50 %. Laina-aika 1–15 vuotta.
-                    <p class="mt-2 mb-2 text-black">
-                        Perusvaatimukset:
-                    </p>
-                    - Olet vähintään 20-vuotias<br>
-                    - Säännölliset palkka- tai eläketulot<br>
-                    - Ei maksuhäiriömerkintöjä<br>
+                 
+                    
                 </div>
                 <div class="m-3">
                     <img src="v2/src/img/Shape.png">
-                    <span class="h6 m-2 text-muted">09 42705041</span>
+                    <span class="h6 m-2 text-muted">09 123456789</span>
                 </div>
 
 
@@ -735,17 +730,20 @@
             <div class="col-12 col-md-6">
                 <table class="h4 text-white">
                     <tr>
-                        <td width="165px">LISÄTIETOA KOROSTA</td>
+                        <td width="175px">HAKIJAN EDELLYTYKSET</td>
                         <td width="*">
                             <hr style="width: 100%">
                         </td>
                     </tr>
                 </table>
                 <p class="h6">
-                    Esimerkkilaskelma: Todellinen vuosikorko on 13,12 %, kun lainasumma on 10 000 €,
-                    takaisinmaksuaika on 5 vuotta, tilinhoitomaksu 5 €, avausmaksu 150 € ja esimerkkikorko 10,9 %.
-                    Takaisinmaksettava summa on tällöin 13 465 €, eli 216,93 €/kk. Todellinen vuosikorko 4,9-50%.
+                - Ikä vähintään 20 vuotta <br>
+                    - Säännölliset tulot <br>
+                    - Ei maksuhäiriömerkintöjä <br>
+
                 </p>
+
+
             </div>
             <div class="col-12 col-md-6">
                 <table class="h4 text-white">
@@ -757,12 +755,8 @@
                     </tr>
                 </table>
                 <p class="h6">
-                    finance24 on kotimainen palvelu, joka toimii apunasi lainanhaussa. Lähetämme
-                    lainahakemuksesi eteenpäin lainanvälittäjälle, joka kilpailuttaa hakemuksesi pankeilla ja
-                    rahoitusyhtiöillä. finance24 markkinoi Freedom Rahoituksen ja Rahalaitoksen luvanvaraisia
-                    lainanvälityspalveluja. Autamme sinua myös lainanhaussa vertailemalla eri pankkeja ja
-                    rahoitusyhtiöitä sekä jaamme hyödyllisiä talousvinkkejä. Palvelu on maksuton eikä sido sinua
-                    mihinkään. <span class="text-white">Rekisteriselosteen löydät tästä.</span>
+           Lainakonttori.fi tarjoaa lainanhakijoille nopean ja helpon tavan kilpailuttaa erilaisia luottoja tarjoavat yhtiöt. Palvelu on täysin maksuton eikä lainahakemuksen jättäminen velvoita mihinkään. Lainakonttorin kautta jätetyt lainahakemukset välitetään Lainakonttorin yhteistyökumppaneille, jotka ovat kotimaisia ja Euroopan talousalueella toimivia lisensoituja pankkeja ja rahoituslaitoksia.<a href="#"> 
+Rekisteriseloste</a></span>
                 </p>
             </div>
         </div>
@@ -771,8 +765,8 @@
     </div>
     <div class="container copy-right w-100 bg-faded text-center p-3">
         <p class="h4 text-white">Ajankohtaista lainoista - Laina FAQ - Yrityslaina - Ota yhteyttä</p>
-        <p class="h7">finance24 © 2017 | Linnankoskenkatu 1 A 11 | 00250 Helsinki |
-            finance24.fi </p>
+        <p class="h7">Terminus Brokers Oy  © 2017 | Fredrikinkatu 61, 6. krs  | 00100 Helsinki (Ei asiakaspalvelua) </p>
+ <p class="h7">asiakaspalvelu@lainakonttori.fi  | 09 123456789 | Rekisteriseloste  </p>
     </div>
 </footer>
 
