@@ -6,14 +6,18 @@
 //  import $ from 'jquery';
 // import 'jquery-ui';
 // import 'bootstrap';
+var pp = 500;
+var yy = 1;
 $(document).ready(() => {
   $('#slider1 .slide').slider({
     range: "min",
     min: 500,
     max: 50000,
-    value: 25000,
+    value: 500,
     slide(event, ui) {
       $('#slider1 input').val(ui.value);
+      pp = ui.value;
+      calculate(ui.value,yy);
     },
   });
   $('#slider1 input').val($('#slider1 .slide').slider('value'));
@@ -22,9 +26,11 @@ $(document).ready(() => {
     range: "min",
     min: 1,
     max: 15,
-    value: 12,
+    value: 1,
     slide(event, ui) {
       $('#slider2 input').val(ui.value);
+        yy = ui.value;
+        calculate(pp,ui.value);
     },
   });
 
@@ -41,6 +47,30 @@ $(document).ready(() => {
 
 
 });
+
+function calculate(principal,year) {
+    var interest = 10.47 / 100 / 12;
+    var payments = year * 12;
+
+
+    var x = Math.pow(1 + interest, payments);
+    var monthly = (principal*x*interest)/(x-1);
+
+
+    if (!isNaN(monthly) &&
+        (monthly != Number.POSITIVE_INFINITY) &&
+        (monthly != Number.NEGATIVE_INFINITY)) {
+        $("#monthly_payment").val(round(monthly).toFixed(0));
+    }
+    else {
+
+    }
+}
+
+
+function round(x) {
+    return Math.round(x*100)/100;
+}
 
 function openApplicationForm(e) {
   if($("#from_email").val() != '' && $("#from_phone").val() != ''){
