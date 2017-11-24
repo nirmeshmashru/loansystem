@@ -95,7 +95,7 @@ SAAT LAINATARJOUKSEN HETI  
             <div id="slider1" class="block_1_2_">
                 <div class="form-group d-flex justify-content-between row">
                     <label class="col-4 align-self-center">Lainasumma:</label>
-                    <input class="col-5 align-self-center value" type="text" name="amount" required="required"/>
+                    <input class="col-5 align-self-center value" type="text" id="amount" required="required"/>
                     <div class=" col-3 unit h3 align-self-center text-info ff-SFNSD">euroa</div>
                 </div>
                 <div class="choice d-flex justify-content-between row">
@@ -107,7 +107,7 @@ SAAT LAINATARJOUKSEN HETI  
             <div id="slider2" class="block_1_2_">
                 <div class="form-group d-flex justify-content-between row">
                     <label class="col-4 align-self-center">Laina-aika:</label>
-                    <input class="col-5 align-self-center value" type="text" name="period" required="required"/>
+                    <input class="col-5 align-self-center value" type="text" id="period" required="required"/>
                     <div class="col-3 unit h3 align-self-center text-info ff-SFNSD">vuotta</div>
                 </div>
                 <div class="choice d-flex justify-content-between row">
@@ -119,14 +119,14 @@ SAAT LAINATARJOUKSEN HETI  
             <div class="block_1_2_">
                 <div class="title d-flex justify-content-between row">
                     <label class="col-4 align-self-center">Kuukausierä*:</label>
-                    <input class="col-5 align-self-center value bg-blue" value="475" type="text" name="monthly_payment" required="required"/>
+                    <input class="col-5 align-self-center value bg-blue" value="44" type="text" id="monthly_payment" required="required"/>
                     <div class="col-3 unit h3 align-self-center text-info ff-SFNSD">euroa</div>
                 </div>
-                <div class="title d-flex justify-content-between row">
+               <!-- <div class="title d-flex justify-content-between row">
                     <label class="col-4 align-self-center">Kulut & korot*:</label>
                     <input class="col-5 align-self-center value bg-blue" value="475" type="text" name="cost_and_interest" required="required"/>
                     <div class="col-3 unit h3 align-self-center text-info ff-SFNSD">euroa</div>
-                </div>
+                </div>-->
             </div>
                 <div class="item form-group input-text">
                     <label class="h4 text-info">Sähköpostiosoite:</label>
