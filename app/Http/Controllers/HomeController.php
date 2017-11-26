@@ -38,4 +38,5 @@ class HomeController extends Controller
              'approved_loan'=>$approved_loan,'declined_loan'=>$declined_loan,'total_customers'=>$total_customers]);
     }
 
+
 }
