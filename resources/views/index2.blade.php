@@ -30,7 +30,7 @@
 
 
 <header class="bg-w w-100 ff-SFNSD">
-    <div class="container h2 p-3 text-info"><a>Etusivu</a><a style="padding-left: 22px;">Yritys</a><a style="padding-left: 22px;">Yhteystiedot</a></div>
+    <div class="container h2 p-3 text-info"><a href="{{route('home')}}" style="text-decoration: none;">Etusivu</a><a href="{{route('company')}}" style="padding-left: 22px;text-decoration: none;">Yritys</a><a href="{{route('contacts')}}" style="padding-left: 22px;text-decoration: none;">Yhteystiedot</a></div>
 </header>
 <div class="body container">
     <form action="{{Route('loanstore')}}" method="POST" name="loanForm" id="loanForm" novalidate>

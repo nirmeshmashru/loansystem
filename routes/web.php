@@ -11,10 +11,11 @@
 |
 */
 
-Route::get('/', 'DefaultController@index');
+Route::get('/', 'DefaultController@index')->name('home');
 Route::get('/index1', 'DefaultController@index1');
 Route::post('/loanstore', 'DefaultController@store')->name('loanstore');
-
+Route::get('about-company', 'DefaultController@Company')->name('company');
+Route::get('contact-us', 'DefaultController@Contacts')->name('contacts');
 Auth::routes();
 
     Route::group(['middleware' => 'auth'], function () {
@@ -23,4 +24,5 @@ Auth::routes();
         Route::resource('user', 'UserController');
         Route::resource('customer', 'CustomerController');
         Route::resource('partner', 'PartnerController');
+
     });

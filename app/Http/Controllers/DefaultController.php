@@ -29,6 +29,14 @@ class DefaultController extends Controller
     {
         return view('index1');
     }
+    public function Company()
+    {
+        return view('Company');
+    }
+    public function Contacts()
+    {
+        return view('Contacts');
+    }
 
     /**
      * Show the form for creating a new resource.
